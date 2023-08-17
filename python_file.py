@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 
-f72322cb9amsh83bfbc817491cc9p19ec12jsnb9d7fcd82d45 = '395a0768e0fa3f2721c3c3ecf4982c33'
+f72322cb9amsh83bfbc817491cc9p19ec12jsnb9d7fcd82d45 ='395a0768e0fa3f2721c3c3ecf4982c33'
 
 @app.route('/')
 def index():
@@ -20,7 +20,7 @@ def get_destinations():
   params: {query: 'london'},
   headers: {
         'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com',
-        'X-RapidAPI-Key': f72322cb9amsh83bfbc817491cc9p19ec12jsnb9d7fcd82d45
+        'X-RapidAPI-Key': e30ebecb22mshfaf27173f33f7eep1fd063jsnf37211d5734a
     }
     response = requests.get(tripadvisor_url, headers=headers)
     destinations_data = response.json()
